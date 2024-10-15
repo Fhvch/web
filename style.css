@@ -1,0 +1,106 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #4caf50;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul{
+    background: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover{
+    background-color: #111;
+    border-radius: 5px;
+}
+
+section{
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* Практическая работа */
+section.practical {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #4caf50;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Лабораторная работа */
+section.laboratory {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #f44336;
+    background-color: #ffebee;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background-color: #333;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 16px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f44336;
+}
+
+footer p {
+    margin: 0; /* Убираем отступы для корректного отображения */
+}
+
+* {
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину */
+    margin: 0; /* Сбрасываем внешние отступы для всех элементов */
+    padding: 0; /* Сбрасываем внутренние отступы для всех элементов */
+}
+

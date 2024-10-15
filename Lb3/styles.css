@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f9f9f9; /* Light background */
+    color: #000; /* Black text */
+}
+
+header {
+    background-color: #fff; /* White header */
+    border-bottom: 1px solid lightgray;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo, .search-bar, .profile {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 10px; /* Увеличим внутренние отступы для увеличения высоты */
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    background-color: #f1f1f1;
+    color: #333;
+    border-radius: 20px; /* Оставляем закругленные углы */
+    width: 400px; /* Увеличиваем ширину строки поиска */
+}
+
+.search-bar button {
+    background-color: #f1f1f1;
+    border: 1px solid lightgray;
+    padding: 10px 20px; /* Увеличиваем высоту и ширину кнопки */
+    cursor: pointer;
+    border-radius: 20px; /* Закругленные углы */
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+    background-color: #e0e0e0;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #fff; /* White sidebar */
+    padding: 10px;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    color: #000; /* Black text */
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Darker text */
+    font-size: 14px;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #e6e6e6; /* Light hover effect */
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    margin: 15px 0 5px;
+    color: #666; /* Slightly gray for headings */
+    font-size: 12px;
+}
+
+.sidebar img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff; /* White content area */
+    color: #000; /* Black text */
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.video {
+    width: 320px;
+    background-color: #e0e0e0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid transparent; /* Изначально прозрачная рамка */
+    transition: border-color 0.3s ease; /* Плавное изменение цвета рамки */
+}
+
+.video img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin: 0;
+}
+
+.video:hover {
+    border-color: #000; /* При наведении делаем рамку чёрной */
+}
+
+
+
+
+/* Убрали абсолютное позиционирование */
+.video-title {
+    margin-top: 10px; /* Добавили отступ сверху */
+    font-size: 16px;
+    color: #000; /* Чёрный текст */
+    text-align: center;
+}
+

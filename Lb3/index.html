@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Layout Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Add margin between icons and text */
+        .sidebar a i {
+            margin-right: 10px;
+        }
+        .search-bar button i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="main/youtube-logo.png" alt="YouTube Logo" width="100">
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><i class="fas fa-search"></i> Search</button>
+        </div>
+        <div class="profile">
+            <img src="main/profile-pic.png" alt="Profile" width="40">
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <a href="#" class="active"><i class="fas fa-home"></i> Главная</a>
+            <a href="#"><i class="fas fa-video"></i> Shorts</a>
+            <a href="#"><i class="fas fa-user-friends"></i> Подписки</a>
+            <h3>Вы</h3>
+            <a href="#"><i class="fas fa-user"></i> Мой канал</a>
+            <a href="#"><i class="fas fa-history"></i> История</a>
+            <a href="#"><i class="fas fa-list"></i> Плейлисты</a>
+            <a href="#"><i class="fas fa-video"></i> Ваши видео</a>
+            <a href="#"><i class="fas fa-clock"></i> Смотреть позже</a>
+            <a href="#"><i class="fas fa-thumbs-up"></i> Понравившиеся</a>
+
+            <h3>Подписки</h3>
+            <a href="https://www.youtube.com/@kanepixels" target="_blank"><i class="fas fa-user"></i> Kane Pixels</a>
+            <a href="https://www.youtube.com/@DARKPHIL" target="_blank"><i class="fas fa-user"></i> DARK~PHIL</a>
+            <a href="https://www.youtube.com/@NASA" target="_blank"><i class="fas fa-user"></i> NASA</a>
+            <a href="https://www.youtube.com/@factorio3375" target="_blank"><i class="fas fa-user"></i> Factorio</a>
+        </nav>
+
+        <main class="content">
+            <div class="video-grid">
+                <div class="video">
+                    <a href="https://youtu.be/O9C7Y94lQs0?si=x_We1y8mplv0mD1w" target="_blank">
+                        <img src="vid/vid1.png" alt="Video Thumbnail">
+                    </a>
+                    <div class="video-title">КОШМАР ЗА ОКНОМ! Страшные истории на ночь.Страшилки на ночь.</div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/BYJ7PgdgXUY?si=DsTxPCIfsi5jPuNv" target="_blank">
+                        <img src="vid/vid2.png" alt="Video Thumbnail">
+                    </a>
+                    <div class="video-title">NASA's SpaceX Crew-8: Science, Innovation, and Discovery</div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/gPVpBgc5xVk?si=GiWL4xuyxCFl9rs1" target="_blank">
+                        <img src="vid/vid3.png" alt="Video Thumbnail">
+                    </a>
+                    <div class="video-title">Factorio: Space Age - Vulcanus enemies</div>
+                </div>
+                <div class="video">
+                    <a href="https://youtu.be/DSWUEmJDglw?si=V1cmXJrHRk77xO3f" target="_blank">
+                        <img src="vid/vid4.png" alt="Video Thumbnail">
+                    </a>
+                    <div class="video-title">Backrooms - Lighting and Tile Survey</div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+</body>
+</html>
