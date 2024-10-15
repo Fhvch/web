@@ -1,13 +1,89 @@
-.registration-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Global settings */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
 }
 
+/* Registration form container */
+.registration-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #4a4a4a;
+}
+
+/* Input fields */
+label {
+    font-size: 16px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #008cba;
+    outline: none;
+}
+
+/* Button styles */
 button {
-    background: green;
+    background-color: green;
     color: white;
-    width: 100px;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border: none;
-    border-radius: 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f2f;
+}
+
+/* Form responsiveness */
+@media (max-width: 600px) {
+    .registration-form {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 14px;
+    }
 }
