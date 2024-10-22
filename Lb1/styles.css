@@ -1,4 +1,3 @@
-/* Global settings */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,7 +6,6 @@ body {
     color: #333;
 }
 
-/* Registration form container */
 .registration-form {
     background-color: white;
     border-radius: 10px;
@@ -24,7 +22,6 @@ h1 {
     color: #4a4a4a;
 }
 
-/* Input fields */
 label {
     font-size: 16px;
     color: #555;
@@ -55,7 +52,6 @@ select:focus {
     outline: none;
 }
 
-/* Button styles */
 button {
     background-color: green;
     color: white;
@@ -73,7 +69,6 @@ button:hover {
     background-color: #005f2f;
 }
 
-/* Form responsiveness */
 @media (max-width: 600px) {
     .registration-form {
         width: 95%;

@@ -9,12 +9,12 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #f9f9f9; /* Light background */
-    color: #000; /* Black text */
+    background-color: #f9f9f9; 
+    color: #000; 
 }
 
 header {
-    background-color: #fff; /* White header */
+    background-color: #fff; 
     border-bottom: 1px solid lightgray;
     padding: 10px;
     display: flex;
@@ -28,21 +28,21 @@ header {
 }
 
 .search-bar input {
-    padding: 10px; /* Увеличим внутренние отступы для увеличения высоты */
+    padding: 10px; 
     margin-right: 5px;
     border: 1px solid lightgray;
     background-color: #f1f1f1;
     color: #333;
-    border-radius: 20px; /* Оставляем закругленные углы */
-    width: 400px; /* Увеличиваем ширину строки поиска */
+    border-radius: 20px; 
+    width: 400px; 
 }
 
 .search-bar button {
     background-color: #f1f1f1;
     border: 1px solid lightgray;
-    padding: 10px 20px; /* Увеличиваем высоту и ширину кнопки */
+    padding: 10px 20px; 
     cursor: pointer;
-    border-radius: 20px; /* Закругленные углы */
+    border-radius: 20px; 
     transition: background-color 0.3s ease;
 }
 
@@ -57,12 +57,12 @@ header {
 
 .sidebar {
     width: 240px;
-    background-color: #fff; /* White sidebar */
+    background-color: #fff; 
     padding: 10px;
     border-right: 1px solid lightgray;
     display: flex;
     flex-direction: column;
-    color: #000; /* Black text */
+    color: #000; 
 }
 
 .sidebar a {
@@ -70,18 +70,18 @@ header {
     align-items: center;
     padding: 10px;
     text-decoration: none;
-    color: #333; /* Darker text */
+    color: #333; 
     font-size: 14px;
 }
 
 .sidebar a:hover, .sidebar a.active {
-    background-color: #e6e6e6; /* Light hover effect */
+    background-color: #e6e6e6; 
     border-radius: 10px;
 }
 
 .sidebar h3 {
     margin: 15px 0 5px;
-    color: #666; /* Slightly gray for headings */
+    color: #666; 
     font-size: 12px;
 }
 
@@ -94,8 +94,8 @@ header {
 .content {
     flex-grow: 1;
     padding: 20px;
-    background-color: #fff; /* White content area */
-    color: #000; /* Black text */
+    background-color: #fff; 
+    color: #000; 
 }
 
 .video-grid {
@@ -113,8 +113,8 @@ header {
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
-    border: 2px solid transparent; /* Изначально прозрачная рамка */
-    transition: border-color 0.3s ease; /* Плавное изменение цвета рамки */
+    border: 2px solid transparent; 
+    transition: border-color 0.3s ease; 
 }
 
 .video img {
@@ -128,17 +128,13 @@ header {
 }
 
 .video:hover {
-    border-color: #000; /* При наведении делаем рамку чёрной */
+    border-color: #000; 
 }
 
-
-
-
-/* Убрали абсолютное позиционирование */
 .video-title {
-    margin-top: 10px; /* Добавили отступ сверху */
+    margin-top: 10px; 
     font-size: 16px;
-    color: #000; /* Чёрный текст */
+    color: #000; 
     text-align: center;
 }
 
