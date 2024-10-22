@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.planner-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.left-column, .right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.week-details {
+    display: flex;
+    gap: 20px;
+}
+
+.week-details input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.days-section {
+    margin-top: 20px;
+}
+
+.day {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.day h3 {
+    font-size: 15px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.day input[type="checkbox"] {
+    margin-left: 10px;
+    transform: scale(1.2);
+    margin-right: 10px;
+}
+
+.day textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    min-height: 80px;
+}
+
+.right-column {
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.goals-section,
+.to-do-section,
+.next-week-section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.goal-list,
+.to-do-list,
+.next-week-list {
+    list-style-type: none;
+}
+
+.goal-list li,
+.to-do-list li,
+.next-week-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.goal-list input[type="text"],
+.to-do-list input[type="text"],
+.next-week-list input[type="text"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+}
