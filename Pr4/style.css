@@ -1,0 +1,57 @@
+/* style.css */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 900px;
+}
+
+.key {
+    background-color: #555;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Size Adjustments for Larger Keys */
+.large {
+    grid-column: span 2;
+}
+
+.x-large {
+    grid-column: span 3;
+}
+
+.xx-large {
+    grid-column: span 6;
+}
+
+/* Arrow Keys */
+.key:nth-last-child(3),
+.key:nth-last-child(2),
+.key:nth-last-child(1) {
+    grid-column: span 1;
+}
+
+.keyboard .key:hover {
+    background-color: #666;
+}
