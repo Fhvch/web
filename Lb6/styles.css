@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff7e5f, #ffdec6); /* Створюємо градієнт з двох кольорів */
+    background-size: 400% 400%; /* Збільшуємо розмір для плавного переливу */
+    position: relative;
+    animation: moveBackground 13s ease infinite; /* Анімація фону */
+}
+
+.pokemon {
+    position: absolute;
+    top: 50%;
+    right: -200px; /* Початкове положення покемона праворуч */
+    transform: translateY(-50%);
+    animation: pokemonFly 15s linear infinite; /* Анімація покемона */
+}
+
+.pokemon img {
+    width: 200px; /* Розмір покемона */
+    height: auto;
+}
+
+@keyframes pokemonFly {
+    0% {
+        right: -200px; /* Початкова позиція праворуч */
+        transform: translateY(-50%) scale(1);
+    }
+    50% {
+        right: 50%; /* Покемон на середині екрана */
+        transform: translateX(50%) translateY(-50%) scale(1.2);
+    }
+    100% {
+        right: 100%; /* Покемон летить за межі екрану ліворуч */
+        transform: translateY(-50%) scale(1);
+    }
+}
+
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%; /* Початкова позиція градієнта */
+    }
+    50% {
+        background-position: 100% 50%; /* Середина анімації */
+    }
+    100% {
+        background-position: 0% 50%; /* Кінець анімації (повернення до початкової позиції) */
+    }
+}

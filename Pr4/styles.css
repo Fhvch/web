@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1e1e2f; 
+    font-family: "Fira Code", monospace;
+    color: #e0e0e0; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    background: #2e2e3f; 
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(15, 48px);
+    gap: 8px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #3e3e4f; 
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.4), 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #444454; 
+    color: #f0f0f0; 
+    border-radius: 8px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+}
+
+.caret {
+    display: inline-block;
+    transform: rotate(180deg); /* Поворот символа */
+    font-size: 17px;
+}
+
+.key br {
+    margin-right: 10px;
+}
+
+.key:hover {
+    background: #6c63ff; 
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 10px rgba(108, 99, 255, 0.5);
+}
+
+.special-key {
+    background: #565670; 
+}
+
+.Backspace,
+.Tab,
+.CapsLock,
+.Enter {
+    grid-column: span 2;
+}
+
+.Shift.shiftleft {
+    grid-column: span 3;
+}
+
+.Shift.shiftright {
+    grid-column: span 2;
+}
+
+.Space {
+    grid-column: span 5;
+    height: 48px;
+}
+
+#numpadblock {
+    display: grid;
+    grid-template-columns: repeat(3, 48px);
+    gap: 8px;
+    margin-left: 10px;
+}
+
+.ArrowLeft,
+.ArrowRight,
+.ArrowUp,
+.ArrowDown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #f0f0f0;
+}
+
+.updown {
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    height: 48px;
+    background: #444454;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.up, 
+.down {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #f0f0f0;
+    background: #444454;
+    transition: all 0.2s ease;
+}
+
+.up:hover, 
+.down:hover {
+    background: #6c63ff;
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(108, 99, 255, 0.5);
+}
+
+.up {
+    border-bottom: 1px solid #565670;
+}
+
+.down {
+    margin-top: 2px;
+    border-top: 1px solid #565670;
+}
